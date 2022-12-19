@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>OpenAI Image Generator</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script async src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Open AI Playground</h1>
+      <!-- a tag that directs to the open ai docs -->
+      <a href="https://beta.openai.com/docs/api-reference/completions/create"
+        >OPEN AI DOCS</a
+      >
+    </div>
+    <div class="main">
+      <h1>Describe An Image</h1>
+      <form id="image-form">
+        <input type="text" id="prompt" />
+        <a class="random-prompt">Click to generate a random prompt</a>
+        <select id="size">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+        <button type="submit" class="submit-button">Generate</button>
+      </form>
+      <div id="error"></div>
+    </div>
+    <div class="image-container">
+      <h2 class="loading">Loading ...</h2>
+      <img id="image" />
+    </div>
+  </body>
+</html>
